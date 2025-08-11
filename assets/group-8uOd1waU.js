@@ -1,0 +1,1 @@
+const e="deterministic",t="Deterministic Test Providers",n="deterministic",s="",i={type:"none"},c={defaultConcurrency:10,maxConcurrency:100,description:"Local deterministic providers for testing"},o={},r={id:e,name:t,type:n,baseUrl:s,auth:i,execution:c,headers:o};export{i as auth,s as baseUrl,r as default,c as execution,o as headers,e as id,t as name,n as type};

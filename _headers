@@ -1,9 +1,0 @@
-# Netlify Headers Configuration
-# This file sets security headers for all responses
-
-/*
-  X-Frame-Options: DENY
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.openai.com https://api.anthropic.com https://openrouter.ai https://api.groq.com https://api.mistral.ai http://localhost:11434 http://127.0.0.1:11434; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:;
