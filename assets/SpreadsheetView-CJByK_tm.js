@@ -1,1 +1,0 @@
-import{f as t,h as a,i as s,j as o,_ as r}from"./index-nY7SO6jw.js";const d={class:"spreadsheet-view"},n=t({__name:"SpreadsheetView",setup(p){return(i,e)=>(o(),a("div",d,e[0]||(e[0]=[s("h1",null,"Spreadsheet Mode",-1),s("p",null,"Spreadsheet view is being migrated to V3.",-1)])))}}),c=r(n,[["__scopeId","data-v-4715eed3"]]);export{c as default};
