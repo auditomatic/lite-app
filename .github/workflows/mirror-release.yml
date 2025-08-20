@@ -31,11 +31,7 @@ jobs:
           echo "tag=$TAG" >> $GITHUB_OUTPUT
           echo "Mirroring release: $TAG"
 
-      - name: Wait for source release artifacts
-        run: |
-          # Give the source release time to upload all artifacts
-          echo "Waiting 30 seconds for source release artifacts to be fully available..."
-          sleep 30
+      # No wait needed - this is only triggered AFTER the release is complete
 
       - name: Download release assets from auditomatic-lite
         run: |
