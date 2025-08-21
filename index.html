@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Prevent search engine indexing -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    
+    <!-- Cache control headers -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="cache-control" content="no-cache">
+    <meta name="expires" content="0">
+    <meta name="pragma" content="no-cache">
+    <title>Auditomatic Lite</title>
+    <!-- Force browser to check for new version -->
+    <script>
+      // Prevent caching by adding timestamp to page load
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-ByJJVjMq.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vue-vendor-BZxY9vkr.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-vendor-X1Ah6TN4.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DgwC-sRC.js">
+    <link rel="modulepreload" crossorigin href="/assets/data-vendor-CllpzWXw.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DLndv8Bi.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
