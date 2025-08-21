@@ -1,0 +1,90 @@
+name: Mirror Release from auditomatic-lite
+
+on:
+  repository_dispatch:
+    types: [release-published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to mirror (e.g., v0.12.3)'
+        required: true
+        type: string
+
+jobs:
+  mirror-release:
+    name: 📦 Mirror Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get release tag
+        id: get-tag
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            TAG="${{ github.event.client_payload.tag }}"
+          else
+            TAG="${{ inputs.tag }}"
+          fi
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "Mirroring release: $TAG"
+
+      - name: Wait for source release artifacts
+        run: |
+          # Give the source release time to upload all artifacts
+          echo "Waiting 30 seconds for source release artifacts to be fully available..."
+          sleep 30
+
+      - name: Download release assets from auditomatic-lite
+        run: |
+          TAG="${{ steps.get-tag.outputs.tag }}"
+          echo "Downloading assets for release $TAG from auditomatic/auditomatic-lite..."
+          
+          # Create temp directory for assets
+          mkdir -p release-assets
+          cd release-assets
+          
+          # Download all assets using gh CLI (handles private repo auth automatically)
+          gh release download "$TAG" \
+            --repo auditomatic/auditomatic-lite \
+            --pattern "*"
+          
+          # List downloaded files
+          echo "Downloaded files:"
+          ls -la
+          cd ..
+        env:
+          GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use DEPLOY_TOKEN to access private auditomatic-lite
+
+      - name: Get release body from source
+        id: get-body
+        run: |
+          TAG="${{ steps.get-tag.outputs.tag }}"
+          
+          # Get release body from private auditomatic-lite repo
+          BODY=$(gh api repos/auditomatic/auditomatic-lite/releases/tags/$TAG --jq '.body')
+          
+          # Save to file to handle multiline content
+          echo "$BODY" > release-body.md
+          echo "Release body saved to release-body.md"
+        env:
+          GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use DEPLOY_TOKEN to access private auditomatic-lite
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.get-tag.outputs.tag }}
+          name: Auditomatic Lite ${{ steps.get-tag.outputs.tag }}
+          body_path: release-body.md
+          draft: false
+          prerelease: false
+          files: release-assets/*
+          fail_on_unmatched_files: false
+
+      - name: Verify release
+        run: |
+          TAG="${{ steps.get-tag.outputs.tag }}"
+          echo "✅ Successfully mirrored release $TAG"
+          echo "📦 Release URL: https://github.com/auditomatic/lite-app/releases/tag/$TAG"
