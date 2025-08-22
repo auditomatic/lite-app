@@ -1,1 +1,0 @@
-const e="deterministic",t="Deterministic Models",s="",n=[],i={promptKey:"prompt",wrapPrompt:!1},o=!0,r={id:e,name:t,endpoint:s,modelRules:n,requestTransform:i,deterministic:o};export{r as default,o as deterministic,s as endpoint,e as id,n as modelRules,t as name,i as requestTransform};

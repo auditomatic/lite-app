@@ -1,0 +1,1 @@
+const t="deterministic",e="Deterministic Models",i="",n=[],s={promptKey:"prompt",wrapPrompt:!1},o=!0,r={id:t,name:e,endpoint:"",modelRules:n,requestTransform:s,deterministic:o};export{r as default,o as deterministic,i as endpoint,t as id,n as modelRules,e as name,s as requestTransform};
