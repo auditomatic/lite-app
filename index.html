@@ -5,6 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Content Security Policy (production-ready, allows JS parsers and Pyodide) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.openai.com https://api.anthropic.com https://openrouter.ai https://api.openrouter.ai https://*.auditomatic.org http://localhost:11434 http://127.0.0.1:11434 https://cdn.jsdelivr.net https://pypi.org https://files.pythonhosted.org ws://localhost:* wss://localhost:*; worker-src 'self' blob:; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none';">
+    
     <!-- Prevent search engine indexing -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -19,7 +22,7 @@
     <meta name="pragma" content="no-cache">
     <title>Auditomatic Lite</title>
     <!-- Force browser to check for new version -->
-    <script type="module" crossorigin src="/assets/index-BxJAVmxU.js"></script>
+    <script type="module" crossorigin src="/assets/index-CLqmclCd.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vue-vendor-DPw1dQYc.js">
     <link rel="modulepreload" crossorigin href="/assets/utils-vendor-DcTsQz_8.js">
     <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DDlYs5wr.js">
