@@ -58,6 +58,26 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use DEPLOY_TOKEN to access private auditomatic-lite
 
+      - name: Fix URLs in latest.json
+        run: |
+          # Fix the download URLs in latest.json to point to lite-app instead of auditomatic-lite
+          if [ -f "release-assets/latest.json" ]; then
+            echo "Fixing URLs in latest.json..."
+            echo "Original latest.json (first 50 lines):"
+            head -50 release-assets/latest.json
+            
+            # Replace all references to auditomatic-lite with lite-app
+            sed -i 's|auditomatic/auditomatic-lite|auditomatic/lite-app|g' release-assets/latest.json
+            
+            echo ""
+            echo "Fixed latest.json (first 50 lines):"
+            head -50 release-assets/latest.json
+            
+            echo "✅ URLs in latest.json have been fixed"
+          else
+            echo "⚠️ latest.json not found in release assets"
+          fi
+
       - name: Get release body from source
         id: get-body
         run: |
