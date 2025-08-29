@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Solid Bold Negative Space A</title>
+  
+  <!-- Magnifying glass circle - BLACK, using more canvas -->
+  <circle cx="200" cy="200" r="190" fill="white" stroke="#000000" stroke-width="32"/>
+  
+  <!-- Purple A with negative space interior - MOVED UP -->
+  <path d="M 200 60 L 80 320 L 130 320 L 150 270 L 250 270 L 270 320 L 320 320 L 200 60 Z 
+           M 200 130 L 170 220 L 230 220 L 200 130 Z" 
+        fill-rule="evenodd"
+        fill="#8b5cf6" />
+  
+  <!-- Handle - BLACK -->
+  <rect x="340" y="340" width="160" height="36" rx="18" transform="rotate(45 340 340)" fill="#000000"/>
+</svg>
