@@ -11,9 +11,7 @@
     <meta name="theme-color" content="#8b5cf6" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Content Security Policy (production-ready, allows JS parsers and Pyodide) -->
-    <!-- Note: 'wasm-unsafe-eval' removed from script-src for Safari compatibility - dynamic CSP in main.ts handles browser detection -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' tauri: ipc: http://ipc.localhost; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http:; font-src 'self' data:; connect-src 'self' tauri: ipc: http://ipc.localhost https://api.openai.com https://api.anthropic.com https://openrouter.ai https://api.openrouter.ai https://*.auditomatic.org http://localhost:* http://127.0.0.1:* https://cdn.jsdelivr.net https://pypi.org https://files.pythonhosted.org ws://localhost:* wss://localhost:* https: http:; worker-src 'self' blob:; child-src 'self' blob:; form-action 'self'; base-uri 'self'; object-src 'none';">
+    <!-- Content Security Policy is dynamically managed by main.ts -->
     
     <!-- Prevent search engine indexing -->
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
@@ -29,7 +27,7 @@
     <meta name="pragma" content="no-cache">
     <title>Auditomatic Lite</title>
     <!-- Force browser to check for new version -->
-    <script type="module" crossorigin src="/assets/index-Ct9C5KbG.js"></script>
+    <script type="module" crossorigin src="/assets/index-BNX_IPEp.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vue-vendor-BQHtwQ0z.js">
     <link rel="modulepreload" crossorigin href="/assets/utils-vendor-dhWzhKaO.js">
     <link rel="modulepreload" crossorigin href="/assets/ui-vendor-BbbHaRD-.js">
@@ -38,8 +36,5 @@
   </head>
   <body>
     <div id="app"></div>
-    <!-- GoatCounter Analytics - GDPR compliant, no cookies -->
-    <script data-goatcounter="https://staeiou.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
