@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "totalBytes": 4924768,
+  "packages": [
+    {
+      "path": "/vendor/nltk-data/tokenizers/punkt_tab.zip",
+      "sizeBytes": 4319076,
+      "sha256": "e57f64187974277726a3417ca6f181ec5403676c717672eef6a748a7b20e0106"
+    },
+    {
+      "path": "/vendor/nltk-data/help/tagsets_json.zip",
+      "sizeBytes": 13239,
+      "sha256": "6b80fb9ed475e4e811fbd4429100313844988cf7a8ab36728bcc75cecc8220f0"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/names.zip",
+      "sizeBytes": 21326,
+      "sha256": "0eec7e958b34982662b8f05824ae64642dea097b08057ade65c252191c5fe7ca"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/nonbreaking_prefixes.zip",
+      "sizeBytes": 25437,
+      "sha256": "62dd9fe11b21d201ca26cf2351595512965d5fe064f9d6ce1873c6231b46d869"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/opinion_lexicon.zip",
+      "sizeBytes": 24947,
+      "sha256": "7a5da68d53016c5d1fca38f7dd81844cff73466371f90968d1ef15c85b873193"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/paradigms.zip",
+      "sizeBytes": 24902,
+      "sha256": "5875c44cd547b6a8fdde48f8f798fe45bcad7cb232a93ee5fae17fed130c9870"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/stopwords.zip",
+      "sizeBytes": 37733,
+      "sha256": "48c0e52d8b52546e827f53761fb30300c0ab94f70660d28bd65ba0a86270946b"
+    },
+    {
+      "path": "/vendor/nltk-data/corpora/swadesh.zip",
+      "sizeBytes": 22828,
+      "sha256": "0b69919501a098f25d2abad9edb84689e1ed44915ca1c65c7832d2bf9d1de3b9"
+    },
+    {
+      "path": "/vendor/nltk-data/grammars/basque_grammars.zip",
+      "sizeBytes": 4704,
+      "sha256": "40ec8a0e92079f32a6900189e8551909506e727b19652f28641fcd825a374ec7"
+    },
+    {
+      "path": "/vendor/nltk-data/grammars/book_grammars.zip",
+      "sizeBytes": 9103,
+      "sha256": "cc63b32d680888c04b3c332218d645a9f9db8571ffe7229808391c889796ffbd"
+    },
+    {
+      "path": "/vendor/nltk-data/grammars/large_grammars.zip",
+      "sizeBytes": 283747,
+      "sha256": "5a81e5278757fafe6e8f19b16f6e4363783635ee332c5c238a30e190f735da59"
+    },
+    {
+      "path": "/vendor/nltk-data/grammars/sample_grammars.zip",
+      "sizeBytes": 20293,
+      "sha256": "8c3e4fecdc47ef1d262401eda08bde995cf4ed912a7934a32905263485240872"
+    },
+    {
+      "path": "/vendor/nltk-data/grammars/spanish_grammars.zip",
+      "sizeBytes": 4047,
+      "sha256": "4207035d8795d37000c06391d97b068ae470a43db697d96473018f392552b742"
+    },
+    {
+      "path": "/vendor/nltk-data/stemmers/rslp.zip",
+      "sizeBytes": 3805,
+      "sha256": "f482f9666a2a76cdd4acab16b01a44b002550ebaac29906dbd5a1bbc281e4f8b"
+    },
+    {
+      "path": "/vendor/nltk-data/sentiment/vader_lexicon.zip",
+      "sizeBytes": 90486,
+      "sha256": "8adba4294eef3964d820bf655e37e61bdc3a341994356af59b74fb3b4a36ce5c"
+    },
+    {
+      "path": "/vendor/nltk-data/taggers/universal_tagset.zip",
+      "sizeBytes": 19095,
+      "sha256": "d490e1ae8f5625dcdfdda04be15c22a2aade8c2561a36a61edcdf0c7d6aa8352"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "runtime": "pyodide",
+  "version": "0.29.4",
+  "roots": [
+    "beautifulsoup4",
+    "lxml",
+    "micropip",
+    "msgspec",
+    "nltk",
+    "numpy",
+    "orjson",
+    "regex",
+    "sqlite3",
+    "typing-extensions"
+  ],
+  "packages": [
+    {
+      "name": "beautifulsoup4",
+      "file": "beautifulsoup4-4.13.3-py3-none-any.whl",
+      "bytes": 104396,
+      "sha256": "d51d13768fd4cdf3fd4370f9d5b2b4f42a97c3a450eead1a6a691685cee69c99"
+    },
+    {
+      "name": "lxml",
+      "file": "lxml-6.0.2-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 1637504,
+      "sha256": "726fd93726e98fb9472d6ded592bc1a564e7e1bf1895bd51fb86cd0b03aac43f"
+    },
+    {
+      "name": "micropip",
+      "file": "micropip-0.11.1-py3-none-any.whl",
+      "bytes": 115486,
+      "sha256": "a5569ea4002b9cdd6cf50eda0c14fb3fcb0da9d8c702feadcfd04459b4c3040a"
+    },
+    {
+      "name": "msgspec",
+      "file": "msgspec-0.19.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 129627,
+      "sha256": "28f35d34d638eb6228a9e5b8a33f27477d11620d2c722c298d1df79bee36a8a4"
+    },
+    {
+      "name": "nltk",
+      "file": "nltk-3.9.1-py3-none-any.whl",
+      "bytes": 1225564,
+      "sha256": "85d7fd659d938a1a0b003d1c67d600f7bfb1dc5b98bf4cd27b7e67a82ee3dd5f"
+    },
+    {
+      "name": "numpy",
+      "file": "numpy-2.2.5-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 2823762,
+      "sha256": "800c98edc0c864dfa49f07005680c699b4b42b84eae1f8cb19d35b3634e7f05c"
+    },
+    {
+      "name": "orjson",
+      "file": "orjson-3.10.16-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 134365,
+      "sha256": "7ca4fbc865d41c417ab1d8252a55d360c850f62ff96d24d33cf2c6b1be6c1665"
+    },
+    {
+      "name": "regex",
+      "file": "regex-2024.11.6-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 200280,
+      "sha256": "bd05caf01bfb89d74aa3db160ebae3ae343a35540c98657f08167ba4c4ce325d"
+    },
+    {
+      "name": "soupsieve",
+      "file": "soupsieve-2.6-py3-none-any.whl",
+      "bytes": 36185,
+      "sha256": "127cca016cc103ef5e3ea165b02f2263f4b38f206a05ee05badc3e6c39f92ad1"
+    },
+    {
+      "name": "sqlite3",
+      "file": "sqlite3-1.0.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "bytes": 560803,
+      "sha256": "3d64fee45743c2d9662110709086b342a226389253b0ea7f531a92845b008fea"
+    },
+    {
+      "name": "typing-extensions",
+      "file": "typing_extensions-4.15.0-py3-none-any.whl",
+      "bytes": 44613,
+      "sha256": "42190f892f6219350c50e107954f57cb6196acac818fece4a7d21689c94f71de"
+    }
+  ],
+  "separateWheels": [
+    {
+      "name": "json-repair",
+      "file": "json_repair-0.63.4-py3-none-any.whl",
+      "bytes": 51295,
+      "sha256": "0f374f3eee21454aef0a5d72c06b8689b660a1788f80ab392639e3f7d5c5d458"
+    }
+  ],
+  "packageWheelBytes": 7012585,
+  "separateWheelBytes": 51295,
+  "totalWheelBytes": 7063880
+}

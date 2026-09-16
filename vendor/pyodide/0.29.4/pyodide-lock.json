@@ -1,0 +1,160 @@
+{
+  "info": {
+    "abi_version": "2025_0",
+    "arch": "wasm32",
+    "platform": "emscripten_4_0_9",
+    "python": "3.13.2"
+  },
+  "packages": {
+    "beautifulsoup4": {
+      "depends": [
+        "soupsieve",
+        "typing-extensions"
+      ],
+      "file_name": "beautifulsoup4-4.13.3-py3-none-any.whl",
+      "imports": [
+        "bs4"
+      ],
+      "install_dir": "site",
+      "name": "beautifulsoup4",
+      "package_type": "package",
+      "sha256": "d51d13768fd4cdf3fd4370f9d5b2b4f42a97c3a450eead1a6a691685cee69c99",
+      "unvendored_tests": true,
+      "version": "4.13.3"
+    },
+    "lxml": {
+      "depends": [],
+      "file_name": "lxml-6.0.2-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "lxml"
+      ],
+      "install_dir": "site",
+      "name": "lxml",
+      "package_type": "package",
+      "sha256": "726fd93726e98fb9472d6ded592bc1a564e7e1bf1895bd51fb86cd0b03aac43f",
+      "unvendored_tests": false,
+      "version": "6.0.2"
+    },
+    "micropip": {
+      "depends": [],
+      "file_name": "micropip-0.11.1-py3-none-any.whl",
+      "imports": [
+        "micropip"
+      ],
+      "install_dir": "site",
+      "name": "micropip",
+      "package_type": "package",
+      "sha256": "a5569ea4002b9cdd6cf50eda0c14fb3fcb0da9d8c702feadcfd04459b4c3040a",
+      "unvendored_tests": false,
+      "version": "0.11.1"
+    },
+    "msgspec": {
+      "depends": [],
+      "file_name": "msgspec-0.19.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "msgspec"
+      ],
+      "install_dir": "site",
+      "name": "msgspec",
+      "package_type": "package",
+      "sha256": "28f35d34d638eb6228a9e5b8a33f27477d11620d2c722c298d1df79bee36a8a4",
+      "unvendored_tests": false,
+      "version": "0.19.0"
+    },
+    "nltk": {
+      "depends": [
+        "regex",
+        "sqlite3"
+      ],
+      "file_name": "nltk-3.9.1-py3-none-any.whl",
+      "imports": [
+        "nltk"
+      ],
+      "install_dir": "site",
+      "name": "nltk",
+      "package_type": "package",
+      "sha256": "85d7fd659d938a1a0b003d1c67d600f7bfb1dc5b98bf4cd27b7e67a82ee3dd5f",
+      "unvendored_tests": true,
+      "version": "3.9.1"
+    },
+    "numpy": {
+      "depends": [],
+      "file_name": "numpy-2.2.5-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "numpy"
+      ],
+      "install_dir": "site",
+      "name": "numpy",
+      "package_type": "package",
+      "sha256": "800c98edc0c864dfa49f07005680c699b4b42b84eae1f8cb19d35b3634e7f05c",
+      "unvendored_tests": false,
+      "version": "2.2.5"
+    },
+    "orjson": {
+      "depends": [],
+      "file_name": "orjson-3.10.16-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "orjson"
+      ],
+      "install_dir": "site",
+      "name": "orjson",
+      "package_type": "package",
+      "sha256": "7ca4fbc865d41c417ab1d8252a55d360c850f62ff96d24d33cf2c6b1be6c1665",
+      "unvendored_tests": false,
+      "version": "3.10.16"
+    },
+    "regex": {
+      "depends": [],
+      "file_name": "regex-2024.11.6-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "regex"
+      ],
+      "install_dir": "site",
+      "name": "regex",
+      "package_type": "package",
+      "sha256": "bd05caf01bfb89d74aa3db160ebae3ae343a35540c98657f08167ba4c4ce325d",
+      "unvendored_tests": true,
+      "version": "2024.11.6"
+    },
+    "soupsieve": {
+      "depends": [],
+      "file_name": "soupsieve-2.6-py3-none-any.whl",
+      "imports": [
+        "soupsieve"
+      ],
+      "install_dir": "site",
+      "name": "soupsieve",
+      "package_type": "package",
+      "sha256": "127cca016cc103ef5e3ea165b02f2263f4b38f206a05ee05badc3e6c39f92ad1",
+      "unvendored_tests": false,
+      "version": "2.6"
+    },
+    "sqlite3": {
+      "depends": [],
+      "file_name": "sqlite3-1.0.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "imports": [
+        "sqlite3",
+        "_sqlite3"
+      ],
+      "install_dir": "site",
+      "name": "sqlite3",
+      "package_type": "cpython_module",
+      "sha256": "3d64fee45743c2d9662110709086b342a226389253b0ea7f531a92845b008fea",
+      "unvendored_tests": false,
+      "version": "1.0.0"
+    },
+    "typing-extensions": {
+      "depends": [],
+      "file_name": "typing_extensions-4.15.0-py3-none-any.whl",
+      "imports": [
+        "typing_extensions"
+      ],
+      "install_dir": "site",
+      "name": "typing-extensions",
+      "package_type": "package",
+      "sha256": "42190f892f6219350c50e107954f57cb6196acac818fece4a7d21689c94f71de",
+      "unvendored_tests": false,
+      "version": "4.15.0"
+    }
+  }
+}
