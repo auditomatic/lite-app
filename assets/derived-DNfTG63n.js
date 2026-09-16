@@ -1,0 +1,1 @@
+import{Y as c,Z as e,W as a,U as p}from"./index-CUAN3M9R.js";function u(r,o){const t=c(r),n=e(r),s=o??a(r);return{contract:t?.contract??null,errors:n,prose:t?.contract?p(t.contract,s):"",context:t}}export{u as d};
