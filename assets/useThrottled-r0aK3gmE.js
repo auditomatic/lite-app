@@ -1,0 +1,1 @@
+import{t as r}from"./utils-vendor-C__G4_v4.js";import{s,w as n,g as l,o as i}from"./vue-vendor-DrmF77KR.js";function c(t,a){const o=s(t()),e=r(()=>{o.value=t()},a,{leading:!0,trailing:!0});return n(t,e),l()&&i(()=>e.cancel()),o}export{c as u};
