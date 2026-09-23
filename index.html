@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- spellcheck and writingsuggestions inherit from any ancestor, so setting
+     them here turns both off for every field in the app, including the ones
+     Ant Design and Teleport render straight into <body>. Fields holding prose
+     (prompts, notes, descriptions) opt back into spellcheck individually.
+     autocorrect and autocapitalize do not inherit this way; see
+     shared/utils/text-entry-defaults.ts. -->
+<html lang="en" spellcheck="false" writingsuggestions="false">
   <head>
     <meta charset="UTF-8">
     <!-- Favicons -->
@@ -27,12 +33,12 @@
     <meta name="pragma" content="no-cache">
     <title>Auditomatic Lite</title>
     <!-- Force browser to check for new version -->
-    <script type="module" crossorigin src="/assets/index-CInoAGZb.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vue-vendor-DrmF77KR.js">
-    <link rel="modulepreload" crossorigin href="/assets/utils-vendor-C__G4_v4.js">
-    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-Dlha3CV7.js">
+    <script type="module" crossorigin src="/assets/index-BCA9BBT9.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vue-vendor-BiegT0HZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-vendor-B3deJ26_.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-C1ajn_XG.js">
     <link rel="modulepreload" crossorigin href="/assets/tauri-vendor-CMy7hGlg.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Wfpc8zRY.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-YL8p_peF.css">
   </head>
   <body>
     <div id="app"></div>
