@@ -1,0 +1,1 @@
+import{z as c,A as e,C as a,D as p}from"./index-C2gJxO_I.js";function u(r,o){const t=c(r),n=e(r),s=o??a(r);return{contract:t?.contract??null,errors:n,prose:t?.contract?p(t.contract,s):"",context:t}}export{u as d};
