@@ -1,0 +1,1 @@
+function i(r,t){const e=JSON.parse(JSON.stringify(r));return t&&(e.api={...e.api,baseUrl:t}),e}function n(r){if(!r||typeof r!="object")return;const t=r.api;return typeof t?.baseUrl=="string"&&t.baseUrl.length>0?r:void 0}export{n as c,i as f};
