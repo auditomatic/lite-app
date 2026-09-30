@@ -1,0 +1,2 @@
+function o(e){return e?new Date(e).toLocaleDateString():""}function r(e){return e?new Date(e).toLocaleString():"unknown"}function a(e,t){return`Updated: ${r(t)}
+Created: ${r(e)}`}function f(e,t){const n=e.replace(/ \(Modified.*\)$/,"");if(!t.includes(`${n} (Modified)`))return`${n} (Modified)`;let i=2;for(;t.includes(`${n} (Modified ${i})`);)i++;return`${n} (Modified ${i})`}export{a,o as f,f as g};
