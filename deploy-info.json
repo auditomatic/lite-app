@@ -1,12 +1,12 @@
 {
   "app": "auditomatic-lite",
   "sourceRepository": "auditomatic/auditomatic-lite",
-  "sourceSha": "4c57cb7d3e327bc05a7b32e2aee66f72695b30d5",
+  "sourceSha": "b904855aeba1f71120afb50bf0627f366ee7fb27",
   "sourceRef": "main",
   "targetRepository": "auditomatic/lite-app",
   "targetDomain": "lite.auditomatic.org",
-  "runId": "37022742823",
+  "runId": "38441539583",
   "runAttempt": "1",
   "deployAttempt": 1,
-  "deployedAt": "2026-10-02T14:53:59Z"
+  "deployedAt": "2026-10-13T17:50:55Z"
 }
